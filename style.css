@@ -1,0 +1,419 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+display: flex;
+flex-direction: column;
+border: solid red 2px;
+width: 100vw;
+height: 100vh;
+}
+.cont{
+    background-color: #2C2C2C;
+    border: solid 1px white;
+}
+h1{
+    text-align: center;
+}
+
+/*--------------MOBILE--NAV-------------*/
+.mobile-navCONT{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    min-width: 100%;
+    height: 50px;
+    overflow: hidden;
+     background-color:#e6ca5c;
+    box-shadow: 5px 5px 40px #1e2c42;
+    color: white;
+    z-index: 3000;
+}
+/*----------DESK TOP---*/
+@media (min-width:1440px) {
+    .mobile-navCONT{
+        display: none;
+}
+}
+#closeBTN{
+    margin: 0;
+    min-width: 304px;
+}
+#btn-togglerBorder{
+    border: none;
+}
+#navtogIcon{
+    width:  clamp(1.5rem, 3vw,2.5rem);
+}
+#mNav-innerCONT{
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    gap: 60px;
+}
+/*----------TABLET---------*/
+@media(min-width:750px){
+#mNav-innerCONT{
+    gap: 362px;
+}
+}
+.mNav-Titles{
+    font-size: clamp(1.5rem, 3vw,2.5rem);
+}
+
+
+#mobileNav{
+    padding: 9px;
+    width: 183px;
+}
+/*----------TABLET---------*/
+@media(min-width:750px){
+.mobile-navCONT{
+    width: 100%;
+    height: 60px;
+    background-color: tan;
+}
+}
+/*----------DESK TOP---*/
+@media (min-width:1440px) {
+#mobileNav{
+    display: none;
+}
+}
+/*--------TOGGLE MENU---------------*/
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+    background: #4a6fa5;
+}
+.offcanvas-body {
+    flex-grow: 1;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    overflow-y: auto;
+     background: #92a9c9;
+    box-shadow: 5px 5px 40px #1e2c42;
+}
+/*-------------------===================================DESKTOP NAVIGATION -------------*/
+#deskCONT{
+    display: none;
+}
+#deskBTN{
+
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+    #deskCONT{
+    display: block;
+}
+#desk-navTabs{
+margin-right: 150px;
+}
+#deskTitle{
+    text-align: center;
+    margin-right: 274px;
+}
+}
+/*----------------------SECTION----------------------------*/
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: 410px;
+    overflow: hidden;
+    position: relative;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: 530px;
+    overflow: hidden;
+    position: relative;
+}
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+section {
+  min-height: 642px; 
+}
+}
+.herotxt-CONT{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 29px;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+    height: 410px;
+    position: relative;
+    z-index: 1500;
+    border: solid 2px red;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+.herotxt-CONT {
+    height: 519px;
+}}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+.herotxt-CONT {
+    height: 642px; 
+}
+}
+
+
+#Slogan{
+    z-index: 1500;
+    color: white;
+    align-self: center;
+}
+.sl-TXT{
+    text-align: center;
+    color: white;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+.sl-TXT {
+    text-align: center;
+    color: white;
+    width: 616px;
+}
+}
+
+/*-------------------warning BUTTON --------------*/
+.w-pd-BTN{
+    background-color: #ffe066;
+    border: none;
+    width: clamp(120px, 20vw, 130px);
+    min-height: 38px;
+    border-radius: 5px;
+    margin-left: 126px;
+    position: absolute;
+    top: 341px;
+    z-index: 1800;
+}
+
+.w-pd-BTN:hover{
+    color: white;
+    background-color:#e6ca5c;
+   
+}
+.w-pd-BTN:active{
+background-color: #ffe375;
+top: 345px;
+position: absolute;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+.w-pd-BTN {
+    left: 31%;
+    top: 407px;
+}
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+    .w-pd-BTN {
+        left: 39%;
+        top: 424px;
+    }
+
+}
+/*---------------------------*/
+.bgFilter{
+    background-color: gray;
+     width: 525px;
+    min-width: 100%;
+    height: 410px;
+    position: absolute;
+    z-index: 1000;
+    opacity: 0.4;
+}
+#locksmith-BG {
+    width: 644px;
+    min-width: 100%;
+    height: 402px;
+    position: absolute;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+#locksmith-BG {
+    height: 523px;
+}
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+#locksmith-BG {
+  height: 642px;
+}
+}
+
+article{
+    height: auto;
+    min-height: auto;
+
+}
+/*----------------------------------Services Card ----------------*/
+.desk-eventCONT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+.desk-eventCONT {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 64px;
+}
+}
+.card{
+  width: 69%;
+  height: 294px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+/*----------TABLET---------*/
+ @media(min-width:750px){
+.card {
+    width: 55%;
+    height: 294px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+}
+
+#card-innerIMG {
+    display: flex;
+    justify-content: center;
+    height: 155px;
+    min-height: 155px;
+    overflow: hidden;
+}
+#card-install {
+    width: 177px;
+    margin-left: 17px;
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+    #card-install {
+        padding: 0;
+        position: absolute;
+        top: 5px;
+        width: 55%;
+    }
+
+}
+
+
+#card-replace {
+    height: 171px;
+    padding: -3px;
+    width: 190px;
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+#card-replace {
+        padding: 0;
+        position: absolute;
+        bottom: -12px;
+        height: 272px;
+        width: 317px;
+    }
+}
+
+
+#card-create {
+    padding: 5px;
+    width: 167px;
+}
+/*----------DeskTop---------*/
+@media (min-width:1251px){
+    #card-create {
+        padding: 0;
+        position: absolute;
+        bottom: 8px;
+        width: 235px;
+    }
+}
+/*----------DESK TOP---*/
+@media (min-width:1440px) {
+.card{
+    width: 29rem;
+    height: 473px;
+    border-radius: 18px;
+    margin-top: 64px;
+    border: none;
+}
+.card:hover{
+    box-shadow: 5px 25px 40px #1e2c42 ;
+    position: relative;
+    bottom: 20px;
+}
+#card-innerIMG{
+    height: 267px;
+    overflow: hidden;
+    position: relative;
+}
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    background:#e6e6e6;
+    
+}
+#cardBTN{
+align-self: center;
+background: #6da470;
+border: none;
+}
+#cardBTN:hover{
+align-self: center;
+background: #8ab68d;
+}
+
+  /*----------footer------*/
+    footer{
+    background-color: #8ab68d;
+    color: white;
+    padding: 20px;
+    padding-left: 4px;
+    padding-top: 7px;
+    clear: both;
+    }
+    p{
+        margin: 0;
+    }
+     /*----------TABLET---------*/
+ @media(min-width:750px){
+    footer{
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+    .ftTXT{
+        text-align: center;
+    }
+    /*----------DeskTop---------*/
+@media (min-width:1251px){
+  footer{
+    margin: 0;
+    }}

@@ -6,20 +6,17 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
     width: 100vw;
     height: 100vh;
 }
 main{
 display: flex;
 flex-direction: column;
-border: solid red 2px;
 width: 100vw;
 height: 100vh;
 }
 .cont{
     background-color: #2C2C2C;
-    border: solid 1px white;
 }
 h1{
     text-align: center;
@@ -156,7 +153,6 @@ section {
     height: 410px;
     position: relative;
     z-index: 1500;
-    border: solid 2px red;
 }
 /*----------TABLET---------*/
  @media(min-width:750px){
@@ -416,4 +412,5 @@ background: #8ab68d;
 @media (min-width:1251px){
   footer{
     margin: 0;
+
     }}
